@@ -2,7 +2,7 @@ from geopy.geocoders import Nominatim
 from .sporty_models import Address
 
 
-geolocator = Nominatim(user_agent='your email adress')
+geolocator = Nominatim(user_agent='your email address')
 
 
 def find_coords(address: Address):

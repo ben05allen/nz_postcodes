@@ -5,7 +5,7 @@ import random
 import time
 
 
-geolocator = Nominatim(user_agent='your email address')
+geolocator = Nominatim(user_agent='your email adress')
 geocode = RateLimiter(geolocator.geocode, min_delay_seconds=1)
 
 for i, (k, v) in enumerate(postcodes.items(), start=1):
@@ -17,9 +17,9 @@ for i, (k, v) in enumerate(postcodes.items(), start=1):
     else:
         print(f'No coordinates for {v}, {k}')
 
-    if not i%10:
-        print('pausing for ~1min')
-        time.sleep(random.randrange(60,70))
+    # if not i%10:
+    #     print('pausing for ~1min')
+    #     time.sleep(random.randrange(60,70))
 
 # location = geolocator.geocode('AUCKLAND, 2102')
 # if location:
