@@ -1,5 +1,5 @@
 from geopy.geocoders import Nominatim
-from .sporty_models import Address
+from models import Address
 
 
 geolocator = Nominatim(user_agent='your email address')
